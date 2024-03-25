@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+  <style >
+.clock {
+    width: 200px;
+    height: 200px;
+    border: 10px solid #333;
+    border-radius: 50%;
+    position: relative;
+}
+
+.hour-hand, .minute-hand, .second-hand {
+    position: absolute;
+    width: 2px;
+    background-color: #000;
+    transform-origin: 50% 100%;
+}
+
+.hour-hand {
+    height: 50px;
+    top: 50px;
+    left: 99px;
+}
+
+.minute-hand {
+    height: 70px;
+    top: 30px;
+    left: 99px;
+}
+
+.second-hand {
+    height: 80px;
+    top: 20px;
+    left: 99px;
+    background-color: greenyellow;
+}
+
+.center-circle {
+    width: 10px;
+    height: 13px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 94px;
+    left: 94px;
+    }
+    
+  </style>
+    <div class="clock">
+        <div class="hour-hand" id="hour-hand"></div>
+        <div class="minute-hand" id="minute-hand"></div>
+        <div class="second-hand" id="second-hand"></div>
+        <div class="center-circle"></div>
+    </div>
+    <div class="Sanco"></div>
+    <script src="script.js"></script>
+</body>
+</html>
